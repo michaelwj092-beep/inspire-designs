@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "content/home.json"
+        fields:
+          - {label: "Hero Headline", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtext", name: "hero_subtext", widget: "text"}
+          - {label: "Layer 1 (You)", name: "layer_you", widget: "text"}
+          - {label: "Layer 2 (Us)", name: "layer_us", widget: "text"}
+          - {label: "Layer 3 (Family)", name: "layer_family", widget: "text"}
