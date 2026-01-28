@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Inspire Designs</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION SECTION -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo" id="brand-name"></a>
+            <ul class="nav-links" id="nav-list">
+                <!-- Dynamic Nav Items -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="portfolio-title"></h2>
+                <p id="portfolio-subtitle"></p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="series">Sermon Series</button>
+                <button class="filter-btn" data-filter="media">Church Media</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Dynamic Portfolio Images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev">&#8249;</button>
+        <button class="lightbox-next" id="lightbox-next">&#8250;</button>
+        <img src="" alt="Portfolio Image" id="lightbox-img">
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <p id="footer-text"></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="mobile-nav.js"></script>
+</body>
+
+</html>

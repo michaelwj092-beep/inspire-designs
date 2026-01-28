@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Texture - Visual Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: white;
+            padding: 3rem;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #a3a3a3;
+            margin-bottom: 4rem;
+        }
+
+        .guide-section {
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+        }
+
+        .guide-section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            color: #8b5cf6;
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .screenshot-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .screenshot-label {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .screenshot-label h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .screenshot-label p {
+            color: #a3a3a3;
+            font-size: 0.9rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #8b5cf6;
+            text-transform: uppercase;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-card li {
+            color: #a3a3a3;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+
+        .code-example {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .code-example h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #8b5cf6;
+            text-transform: uppercase;
+        }
+
+        .code-example pre {
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1024px) {
+
+            .screenshots-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎨 Global Textured Background</h1>
+    <p class="subtitle">Visual Guide & Implementation Details</p>
+
+    <div class="guide-section">
+        <h2>📸 Visual Results</h2>
+
+        <div class="screenshots-grid">
+            <div class="screenshot-card">
+                <img src="/Users/mikeydubsj/.gemini/antigravity/brain/027f3628-ec97-4a81-afc6-df1ee6863b8a/index_top_view_1768040333978.png"
+                    alt="Homepage top">
+                <div class="screenshot-label">
+                    <h3>Homepage - Hero Section</h3>
+                    <p>Texture visible in margins and behind transparent navbar</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="/Users/mikeydubsj/.gemini/antigravity/brain/027f3628-ec97-4a81-afc6-df1ee6863b8a/index_middle_view_1768040346415.png"
+                    alt="Homepage middle">
+                <div class="screenshot-label">
+                    <h3>Homepage - Content Sections</h3>
+                    <p>Texture acts as "wall" behind semi-transparent content cards</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="/Users/mikeydubsj/.gemini/antigravity/brain/027f3628-ec97-4a81-afc6-df1ee6863b8a/index_bottom_view_1768040363107.png"
+                    alt="Homepage bottom">
+                <div class="screenshot-label">
+                    <h3>Homepage - Closing CTA</h3>
+                    <p>New container background ensures text readability</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="/Users/mikeydubsj/.gemini/antigravity/brain/027f3628-ec97-4a81-afc6-df1ee6863b8a/services_page_view_1768040384108.png"
+                    alt="Services page">
+                <div class="screenshot-label">
+                    <h3>Services Page</h3>
+                    <p>Consistent texture across all pages of the site</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-section">
+        <h2>✨ Key Features</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Global Application</h3>
+                <ul>
+                    <li>Applied to body element</li>
+                    <li>Visible across all pages</li>
+                    <li>Fixed attachment (stays in place)</li>
+                    <li>Animated gradient backdrop</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Preserved Elements</h3>
+                <ul>
+                    <li>Parallax background images</li>
+                    <li>Portfolio card designs</li>
+                    <li>Section backgrounds</li>
+                    <li>Navigation transparency</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Readability</h3>
+                <ul>
+                    <li>Semi-transparent containers</li>
+                    <li>Backdrop blur effects</li>
+                    <li>Content-container utility class</li>
+                    <li>High contrast text</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="guide-section">
+        <h2>💻 Implementation Code</h2>
+
+        <div class="code-example">
+            <h3>Body Element - Global Background</h3>
+            <pre>body {
+    /* GLOBAL TEXTURED BACKGROUND - Acts as the "wall" behind all content */
+    background-image:
+        url('images/concrete-texture.jpg'),
+        linear-gradient(135deg,
+            #1a1a2e 0%,
+            #16213e 25%,
+            #1e1b4b 50%,
+            #312e81 75%,
+            #0a0a14 100%);
+    
+    background-size: auto, 400% 400%;
+    background-position: center, 0% 50%;
+    background-repeat: repeat, no-repeat;
+    <span class="highlight">background-attachment: fixed;</span>
+    
+    /* Blend the texture with the gradient */
+    <span class="highlight">background-blend-mode: multiply;</span>
+    
+    /* Subtle animation */
+    animation: gradientShift 20s ease infinite;
+}</pre>
+        </div>
+
+        <div class="code-example">
+            <h3>Content Container Utility</h3>
+            <pre>.content-container {
+    background: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: var(--border-radius-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}</pre>
+        </div>
+    </div>
+
+    <div class="guide-section">
+        <h2>🎛️ Customization Options</h2>
+
+        <div class="code-example">
+            <h3>Change Blend Mode</h3>
+            <pre>/* Current: Darker, grungier industrial */
+<span class="highlight">background-blend-mode: multiply;</span>
+
+/* Alternative options: */
+background-blend-mode: overlay;      /* Balanced, subtle blend */
+background-blend-mode: hard-light;   /* High contrast, dramatic */
+background-blend-mode: soft-light;   /* Softer, gentler effect */
+background-blend-mode: screen;       /* Lighter, brighter texture */</pre>
+        </div>
+
+        <div class="code-example">
+            <h3>Use Different Texture</h3>
+            <pre>/* Simply replace the image file */
+background-image:
+    <span class="highlight">url('images/YOUR-TEXTURE-HERE.jpg'),</span>
+    linear-gradient(...);</pre>
+        </div>
+    </div>
+
+</body>
+
+</html>

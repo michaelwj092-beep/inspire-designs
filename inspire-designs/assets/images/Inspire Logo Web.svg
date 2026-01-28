@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1590.73 694.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: MontserratRoman-SemiBold, Montserrat;
+        font-size: 214.21px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+        letter-spacing: .03em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="215.78" y1="527.28" x2="191.74" y2="51.42" gradientTransform="translate(105.13 -116.03) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e34c89"/>
+      <stop offset=".5" stop-color="#e34d87"/>
+      <stop offset=".68" stop-color="#e75380"/>
+      <stop offset=".81" stop-color="#ed5e74"/>
+      <stop offset=".92" stop-color="#f56d63"/>
+      <stop offset="1" stop-color="coral"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="301.4" y1="661.64" x2="182.87" y2="-10.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e63ff"/>
+      <stop offset=".33" stop-color="#5c6cf2"/>
+      <stop offset=".33" stop-color="#5e6bef"/>
+      <stop offset=".45" stop-color="#975dc3"/>
+      <stop offset=".54" stop-color="#c054a3"/>
+      <stop offset=".62" stop-color="#d94e90"/>
+      <stop offset=".66" stop-color="#e34c89"/>
+      <stop offset="1" stop-color="coral"/>
+    </linearGradient>
+  </defs>
+  <text class="cls-3" transform="translate(561.45 411.55)"><tspan x="0" y="0">INSPIRE</tspan><tspan x="0" y="202.96">DESIGNS</tspan></text>
+  <g>
+    <rect class="cls-2" x="143.91" y="20.18" width="97.43" height="97.43" transform="translate(7.7 156.39) rotate(-45)"/>
+    <path class="cls-1" d="M522.03,423.04c1.38,36.78-4.85,71.97-17.26,104.09-13.53,35.03-42.62,61.91-78.44,73.17-.23.07-.46.14-.69.22-86.15,26.84-173.49-38.33-173.49-128.54v-233.8h-127.53v276.56c0,92.52,69.99,168.67,159.88,178.43-7.72.73-15.52,1.07-23.42,1.07C116.89,694.23,0,577.31,0,433.1S124.49,164.55,275.04,172.37c134.09,6.97,241.96,116.49,247,250.67Z"/>
+  </g>
+</svg>

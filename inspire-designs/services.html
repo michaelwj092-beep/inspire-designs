@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Inspire Designs</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TEXTURED BACKGROUND -->
+    <div class="services-texture-bg"></div>
+
+
+    <!-- NAVIGATION SECTION -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo" id="brand-name"></a>
+            <ul class="nav-links" id="nav-list">
+                <!-- Dynamic Nav Items -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SERVICES CALCULATOR SECTION -->
+    <section class="services" id="services" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="services-title"></h2>
+                <p id="services-subheadline" class="services-subheadline"></p>
+                <p id="services-subtitle"></p>
+            </div>
+
+            <div class="services-container">
+                <!-- Selectable List -->
+                <div class="services-list" id="services-list">
+                    <!-- Dynamic Service Items -->
+                </div>
+
+                <!-- Sticky Summary -->
+                <div class="plan-summary">
+                    <h3>Your Monthly Plan</h3>
+                    <div class="selected-items-list" id="selected-items-list">
+                        <p style="font-style: italic; opacity: 0.5;">Select services to build your plan...</p>
+                    </div>
+
+                    <div class="summary-total">
+                        <span class="total-label" id="total-label">Total Cost</span>
+                        <span id="total-cost">$0/mo</span>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <p id="services-disclaimer" class="services-disclaimer"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <p id="footer-text"></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="mobile-nav.js"></script>
+</body>
+
+</html>
